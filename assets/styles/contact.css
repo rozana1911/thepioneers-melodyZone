@@ -2,7 +2,7 @@
 
 :root {
   --main-pink: #ff3366;
-  --pink-gradient: linear-gradient(135deg, #ff3366, #ff5c85, #f36, #ff3366);
+  --pink-gradient: linear-gradient(135deg, #ff3366, #ff5c85, #ff7a9e, #ff3366);
   --bg-dark: #0f0810;
   --bg-card: rgba(255, 255, 255, 0.07);
   --text-light: #fff1f6;
@@ -26,28 +26,92 @@ body {
 }
 
 /* HEADER */
-.header {
-  position: relative;
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: var(--pink-gradient);
-  background-size: 300% 300%;
-  animation: gradientMove 10s ease infinite;
-  color: white;
-  box-shadow: 0 0 50px rgba(255, 51, 102, 0.25);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121214;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.header h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  text-shadow: 0 0 25px rgba(255, 100, 140, 0.6);
-  animation: fadeInUp 1.5s ease;
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #faf9fc;
 }
 
-.subtitle {
-  font-weight: 300;
-  opacity: 0.9;
-  animation: fadeIn 2s ease;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #cf385e;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1c1c1f;
+    color: #fff;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #888;
+}
+
+.btn-auth,
+.btn-auth-outline {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-auth {
+    background-color: #ff3366;
+    border: none;
+    color: #fff;
+}
+
+.btn-auth:hover {
+    background-color: #ff5b80;
+}
+
+.btn-auth-outline {
+    border: 1px solid #ff3366;
+    background: transparent;
+    color: #ff3366;
+}
+
+.btn-auth-outline:hover {
+    background-color: #ff3366;
+    color: #fff;
 }
 
 /* CONTACT SECTION */

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e10;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121214;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #faf9fc;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #cf385e;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1c1c1f;
+    color: #fff;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #888;
+}
+
+.btn-auth,
+.btn-auth-outline {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-auth {
+    background-color: #ff3366;
+    border: none;
+    color: #fff;
+}
+
+.btn-auth:hover {
+    background-color: #ff5b80;
+}
+
+.btn-auth-outline {
+    border: 1px solid #ff3366;
+    background: transparent;
+    color: #ff3366;
+}
+
+.btn-auth-outline:hover {
+    background-color: #ff3366;
+    color: #fff;
+}
+
+/* Banner */
+.banner {
+    background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-content h1 {
+    font-size: 2.8em;
+    line-height: 1.3;
+}
+
+.banner-content span {
+    color: #ff3366;
+}
+
+.banner-content p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.btn-primary {
+    background-color: #ff3366;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #ff5b80;
+}
+
+/* Lagu Terbaru */
+.latest-songs {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.latest-songs h2 {
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.song-card {
+    background-color: #1a1a1d;
+    border-radius: 12px;
+    width: 180px;
+    padding: 15px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+}
+
+.song-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.song-card h4 {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.song-card p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.btn-secondary {
+    margin-top: 25px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 1px solid #ff3366;
+    color: #ff3366;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #f04771;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #121214;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+.social-icons a {
+    color: #ff3366;
+    margin: 0 10px;
+    font-size: 1.4em;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
