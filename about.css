@@ -1,0 +1,130 @@
+/* reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* body dan background */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #ff99aa 0%, #ff4848 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+header {
+  background-color: #9c0c30;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* section umum */
+section {
+  padding: 80px 60px;
+  text-align: center;
+  background: transparent;
+  flex: 1;
+}
+
+section h2 {
+  color: #ff3366;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* team */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.member {
+  flex: 0 0 180px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-8px);
+}
+
+.member img {
+  display: block;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff3366;
+  margin: 0 auto 10px;
+}
+
+/* contact */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #ff3366;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-weight: bold;
+  color: #ff3366;
+  margin: 20px 0;
+}
+
+.socials a {
+  margin: 0 15px;
+  font-size: 1.8em;
+  color: #ff3366;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #e6004c;
+  transform: scale(1.1);
+}
+
+/* footer sticky */
+footer {
+  background: #ff668a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
