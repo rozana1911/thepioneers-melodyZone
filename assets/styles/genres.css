@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0a0a0f, #13151a);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121214;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #faf9fc;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #cf385e;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1c1c1f;
+    color: #fff;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #888;
+}
+
+.btn-auth,
+.btn-auth-outline {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-auth {
+    background-color: #ff3366;
+    border: none;
+    color: #fff;
+}
+
+.btn-auth:hover {
+    background-color: #ff5b80;
+}
+
+.btn-auth-outline {
+    border: 1px solid #ff3366;
+    background: transparent;
+    color: #ff3366;
+}
+
+.btn-auth-outline:hover {
+    background-color: #ff3366;
+    color: #fff;
+}
+
+/* GENRE CARD */
+.genre-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 50px 40px;
+  flex: 1;
+}
+
+.genre-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.genre-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 20px rgba(230, 0, 115, 0.3);
+}
+
+.genre-card h2 {
+  color: #e60073;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* SONG PAGE */
+.song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+  flex: 1;
+}
+
+.song-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(230, 0, 115, 0.2);
+}
+
+.song-card h2 {
+  color: #e60073;
+}
+
+.song-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* BACK BUTTON */
+.back-btn-container {
+  margin: 20px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #e60073, #b5179e, #4361ee);
+  background-size: 200% 200%;
+  animation: gradientFlow 6s ease infinite;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.genre-btn {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+  color: #888;
+}
