@@ -165,6 +165,10 @@ section p {
   margin: 0 auto 10px;
 }
 
+.member h3{
+  color: #8f8a8a;
+}
+
 /* contact */
 .contact {
   text-align: center;
